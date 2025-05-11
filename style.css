@@ -1,0 +1,196 @@
+@import url('https://fonts.cdnfonts.com/css/youtube-sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'YouTube Sans', sans-serif;
+    font-family: 'YouTube Sans Dark', sans-serif;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: white;
+    padding: 0 16px;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_burger {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_burgerMenu {
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px; 
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+
+.btn_burgerMenu:hover {
+    background-color: #dbdbdb;
+}
+
+.btn_burgerMenu span {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    /*transition: all 0.3s ease;*/
+}
+
+.btn_burgerMenu span:nth-child(1) { top: 13px}
+.btn_burgerMenu span:nth-child(2) { top: 20px}
+.btn_burgerMenu span:nth-child(3) { top: 27px}
+
+.menu_burger a {
+    width: 123px;
+    height: 56px;
+    display: inline-block;
+    padding: 3px;
+}
+
+.menu_burger a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.area_pesquisar {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.9rem;
+    align-items: center;
+}
+
+.area_pesquisar form {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+}
+
+#txt_pesquisar {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    cursor: text;
+    padding-left: 16px;
+    border: solid 1px #c6c6c6;
+    width: 30rem;
+}
+
+.btn_pesquisar {
+    border: solid 1px #d3d3d3;
+    width: 64px;
+    height: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    padding: 6px 6px;
+}
+
+.btn_pesquisar img {
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+}
+
+.btn_voz {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border-color: transparent;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_voz img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.menu_config {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.75rem;
+    align-items: center;
+}
+
+.btn_burgerConfig {
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: transparent;
+}
+
+.btn_burgerConfig span {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.btn_burgerConfig span:nth-child(1) { top: 20px}
+.btn_burgerConfig span:nth-child(2) { top: 27px}
+.btn_burgerConfig span:nth-child(3) { top: 34px}
+
+.fazer_login {
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    color: #065fd4;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 147px;
+    height: 40px;
+    margin-left: 0.7rem;
+    padding: 0 15px;
+    transition: background-color 0.5s ease;
+}
+
+.fazer_login:hover {
+    background-color: #cef1f5;
+}
+
+#icon_login {
+    height: 27px;
+    width: 27px;
+    margin-right: 6px;
+}
+
+.fazer_login label {
+    font-size: 85%;
+}

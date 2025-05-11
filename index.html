@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icons/youtube.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="nav_bar">
+        <section class="menu_burger">
+            <button onclick="toggleMenu()" class="btn_burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav_burger" style="display: none;">
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+            </nav>
+            <a href="www.youtube.com" title="Página inicial do YouTube">
+                <img src="./assets/icons/YT_logo+nome.png" alt="YOUTUBE logo">
+            </a>
+        </section>
+        <section class="area_pesquisar">
+            <form>
+                <input type="text" name="search_bar" id="txt_pesquisar" placeholder="Pesquisar">
+                <button title="Pesquisar" type="submit" class="btn_pesquisar">
+                    <img src="https://icons.iconarchive.com/icons/icons8/ios7/128/Very-Basic-Search-icon.png">
+                </button>
+            </form>
+            <button title="Pesquisar com sua voz" class="btn_voz" onclick="pesquisaVoz()">
+                <img src="https://icons.iconarchive.com/icons/pictogrammers/material/128/microphone-icon.png">
+            </button>
+        </section>
+        <section class="menu_config">
+            <button onclick="toggleConfig()" class="btn_burgerConfig" title="Configurações">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="conf_burger" style="display: none;">
+                <!--Podem ser seções ou separa-las por um <br> e uma linha
+                <section></section>
+                <section></section>
+                <section></section>-->
+            </nav>
+            <a href="accounts.google.com" class="fazer_login">
+                <img src="./assets/icons/perfil.png" id=icon_login>
+                <label for="icon_login">Fazer login</label>
+            </a>
+        </section>
+    </header>
+    <main>
+        <section .area_esquerta=""></section>
+        <section .area_direita="">
+            <div class="anuncio"></div>
+            <lista_videos></lista_videos>
+        </section>
+    </main>
+</body>
+</html>
