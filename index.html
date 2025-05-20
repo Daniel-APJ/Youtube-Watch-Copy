@@ -4,29 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="/css/header.css">
+
     <link rel="shortcut icon" href="./assets/icons/youtube.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/youtube-sans');
+    </style>
 </head>
+
 <body>
     <header class="nav_bar">
         <section class="menu_burger">
-            <button onclick="toggleMenu()" class="btn_burgerMenu">
+            <button class="btn_burgerMenu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <nav class="nav_burger" style="display: none;">
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
+            <nav class="nav_sideMenu">
+                <ul class="nav_itens">
+                    <li>
+                        <a href="https://youtube.com">
+                            <i class="material-icons">home</i>Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">play_circle_filled</i>Shorts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">subscriptions</i>Inscrições
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav_you">
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">account_circle</i>Você
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">history</i>Histórico
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav_login">
+                    <p>Faça login para curtir vídeos, comentar e se inscrever.</p>
+                    <a href="accounts.google.com" class="fazer_login">
+                        <i class="material-icons">account_circle</i>
+                        <label for="icon_login">Fazer login</label>
+                    </a>
+                </div>
+                <br>
+                <h3><strong>Explorar</strong></h3>
+                <ul class="nav_explorar">
+                    <li><a href="#"><i></i>Em Alta</a></li>
+                    <li><a href="#"><i></i>Shopping</a></li>
+                    <li><a href="#"><i></i>Música</a></li>
+                    <li><a href="#"><i></i>Filmes</a></li>
+                    <li><a href="#"><i></i>Ao vivo</a></li>
+                    <li><a href="#"><i></i>Jogos</a></li>
+                    <li><a href="#"><i></i>Notícias</a></li>
+                    <li><a href="#"><i></i>Esportes</a></li>
+                    <li><a href="#"><i></i>Cursos</a></li>
+                    <li><a href="#"><i></i>Podcasts</a></li>
+                </ul>
+                <h3><strong>Mais do YouTube</strong></h3>
+                <ul class="nav_tubes">
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">smart_display</i>YouTube Premium
+                        </a>
+                    </li>
+                    <li><a href="#"><i></i>YouTube Music</a></li>
+                    <li><a href="#"><i></i>YouTube Kids</a></li>
+                </ul>
+                <ul class="nav_config">
+                    <li><a href=""><i></i>Configurações</a></li>
+                    <li><a href=""><i></i>Histórico de denúncia</a></li>
+                    <li><a href=""><i></i>Ajuda</a></li>
+                    <li><a href=""><i></i>Enviar feedback</a></li>
+                </ul>
+                <div class="nav_footer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum accusamus quas eum fugit sint doloremque velit et magnam, ratione non, repudiandae minima ipsam qui est inventore expedita laudantium sed in?</p>
+                </div>
             </nav>
             <a href="www.youtube.com" title="Página inicial do YouTube">
                 <img src="./assets/icons/YT_logo+nome.png" alt="YOUTUBE logo">
             </a>
+            <div class="overlay"></div>
         </section>
         <section class="area_pesquisar">
             <form>
@@ -52,7 +123,8 @@
                 <section></section>-->
             </nav>
             <a href="accounts.google.com" class="fazer_login">
-                <img src="./assets/icons/perfil.png" id=icon_login>
+                <i class="material-icons" id="icon_login">account_circle</i>
+                <i class="fa-solid fa-circle-user" id="icon_login"></i>
                 <label for="icon_login">Fazer login</label>
             </a>
         </section>
@@ -64,5 +136,7 @@
             <lista_videos></lista_videos>
         </section>
     </main>
+    <script src="/js/script.js"></script>
 </body>
+
 </html>
